@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router";
 import { LuAlignJustify } from "react-icons/lu";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
     const[isOpen,setIsOpen] = useState(false);
@@ -46,9 +47,9 @@ const Navbar = () => {
         className={`flex flex-row items-center justify-between text-xl w-[90%] font-semibold
          ${isOpen ? "h-[180px]" : "h-[70px]"}`}>
             <div className="flex flex-row gap-x-3 items-center justify-center h-full">
-                {/* <img src={InstaIcon}/> */}
+                <img  className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]" src={logo}/>
                 <div className="text-white font-bold ">
-                    <Link to="/">
+                    <Link to="/" className="md:font-bold font-medium">
                          THECODECRAFTS
                     </Link>
                 </div>

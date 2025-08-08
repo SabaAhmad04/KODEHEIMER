@@ -7,24 +7,24 @@ import Image3 from "../assets/Image3.jpg"
 const Images = [
     {
         Image : `${Image1}`,
-        title : "PharmaX POS",
-        text : `Dreams don’t demand perfection,
-                they demand action.
-                Even small steps echo in eternity.`
+        title : "CraftX Frontend",
+        text : `Crafting visually stunning,
+                user-friendly interfaces for
+                seamless digital experiences.`
     },
     {
         Image : `${Image2}`,
-        title : "Ecommerce",
-        text : `Failing isn’t the end,
-            it’s feedback.Every scar tells a 
-            story of survival.Keep walking—clarity lives `
+        title : "CraftX Backend",
+        text : `Building robust, secure, and
+            scalable server-side solutions
+            that power innovation.`
     },
     {
         Image : `${Image3}`,
-        title : "ReatailX Cafeee",
-        text : `Be curious, not just 
-                correct.Greatness grows in 
-                small, silent steps.You don’t`
+        title : "CraftX Full Stack",
+        text : `Delivering end-to-end web 
+                solutions with flawless integration 
+                integration and high performance.`
     }
 ];
 const ImageSlider = () => {

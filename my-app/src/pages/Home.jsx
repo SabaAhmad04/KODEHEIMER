@@ -11,6 +11,7 @@ import MovableBackgroundSection from '../components/Move'
 import Footer from '../components/Footer'
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png"
 
 const Home = () => {
 
@@ -49,9 +50,6 @@ const Home = () => {
 
     <div className='flex flex-col items-center justify-center w-full'>
       <div className='w-full flex flex-col'>
-        {/* <div className='w-full flex flex-col fixed bg-blue-400/60 py-8 mt-3 z-10'>
-          <Navbar/>      
-        </div> */}
         <div className='flex fixed right-1 bottom-10 gap-1 z-3000'>
           <p className='text-gray-500 mt-2.5'>
             <Link to="https://wa.me/917004109936" className='bg-slate-200 px-1 rounded-md py-1'>
@@ -73,17 +71,17 @@ const Home = () => {
 
          <div className={`flex flex-row  mx-auto items-center justify-between pt-6 w-[80%] text-white lg:ml-36 ml-24 z-300 absolute
           ${isOpen && isVisible ? "block" : "hidden"}`}>
-                              <div className="font-bold">
-                                   <Link to="/">
-                                       THECODECRAFTS
-                                   </Link>
-                              </div>
+                              <div className="font-bold flex items-center justify-center">
+                                                                 <img  className="w-[30px] h-[30px]" src={logo}/>
+                                                                 <Link to="/">
+                                                                        THECODECRAFTS
+                                                                 </Link>
+                                                            </div>
                               <div className="flex gap-x-14 items-center">
                                   <Link to="/" className="font-bold">HOME</Link>
                                   <Link to="/about" className="font-bold">ABOUT</Link>
                                   <Link to="/services" className="font-bold">SERVICES</Link>
                                   <Link to="/contactus" className="p-2 px-6 bg-blue-400 rounded-full hover:bg-gray-400">CONTACT US</Link>
-                                  {/* <Link to="/blog" className="font-bold">BLOG</Link> */}
                               </div>
          </div>
 

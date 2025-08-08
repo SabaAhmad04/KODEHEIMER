@@ -11,37 +11,37 @@ export const cardData = [
     {
         id:1 ,
         image:frontend,
-        name:"WebNeX Frontend",
+        name:"CraftX Frontend",
         iconImage: <RxCamera size={100}/> ,
     },
     {
         id:2 ,
         image:backend,
-        name:"WebNex Backend",
+        name:"CraftX Backend",
         iconImage: <RxCamera size={100}/> ,
     },
     {
         id:3 ,
         image:fullStack,
-        name:"WebNex Full Stack",
+        name:"CraftX Full Stack",
         iconImage: <RxCamera size={100}/> ,
     },
     {
         id:4 ,
         image:Ui,
-        name:"WebNeX UI/UX",
+        name:"CraftX UI/UX",
         iconImage: <RxCamera size={100}/> ,
     },
     {
         id:5 ,
         image:ecommerce,
-        name:"WebNeX E-Commerce",
+        name:"CraftX E-Commerce",
         iconImage: <RxCamera size={100}/> ,
     },
     {
         id:6 ,
         image:content,
-        name:"WebNex Textify",
+        name:"CraftX Textify",
         iconImage: <RxCamera size={100}/>,
     },
 ]

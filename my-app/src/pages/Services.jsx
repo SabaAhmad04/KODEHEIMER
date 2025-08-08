@@ -11,7 +11,7 @@ import fullstack from "../assets/fullstack2.jpg"
 import frontend from "../assets/frontend2.jpg"
 import backend from "../assets/backend2.jpg"
 import ui from "../assets/ui.jpg"
-
+import logo from "../assets/logo.png"
 
 
 const Services = () => {
@@ -79,11 +79,12 @@ const Services = () => {
 
                      <div className={`w-full h-[660px]  bg-[rgba(96,165,250,0.4)]  flex flex-col items-center ${isVisible ? "block" : "hidden"}`}>
                      <div className={`flex md:flex-row flex-col mx-auto items-center justify-between pt-6 w-[80%] text-white ${isOpen ? "block" : "hidden"}`}>
-                              <div className="font-bold">
-                                   <Link to="/">
-                                       THECODECRAFTS
-                                   </Link>
-                              </div>
+                              <div className="font-bold flex items-center justify-center">
+                                                                 <img  className="w-[30px] h-[30px]" src={logo}/>
+                                                                 <Link to="/">
+                                                                        THECODECRAFTS
+                                                                 </Link>
+                                                            </div>
                               <div className="flex gap-x-14 items-center">
                                   <Link to="/" className="font-bold">HOME</Link>
                                   <Link to="/about" className="font-bold">ABOUT</Link>

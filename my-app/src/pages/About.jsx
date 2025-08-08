@@ -6,6 +6,7 @@ import MovableBackgroundSection from "../components/Move";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa6";
+import logo from "../assets/logo.png"
 
 const About = () => {
        
@@ -59,7 +60,8 @@ const About = () => {
 
                  <div className={`w-full h-[660px]  bg-[rgba(96,165,250,0.4)]  flex flex-col items-center ${isVisible ? "block" : "hidden"}`}>
                      <div className={`flex md:flex-row flex-col mx-auto items-center justify-between pt-6 w-[80%] text-white ${isOpen ? "block" : "hidden"}`}>
-                              <div className="font-bold">
+                              <div className="font-bold flex items-center justify-center">
+                                   <img  className="w-[30px] h-[30px]" src={logo}/>
                                    <Link to="/">
                                           THECODECRAFTS
                                    </Link>
@@ -103,13 +105,12 @@ const About = () => {
                                          <div className="flex lg:flex-row flex-col justify-between gap-y-6">
                                          <div className="lg:w-[45%] w-full">
                                                 <h1 className="text-7xl font-bold text-slate-800/85">A Bit About Us</h1>
-                                                <p className="mt-8 text-xl text-gray-500">Al Hadaba International FZC is an innovative, technology-focused, business-driven end-to-end IT Solutions Company with a specialization in providing cost-effective custom software solutions to clients based across the Middle East.</p>
-                                                <p className="mt-8 text-xl text-gray-500">Since our inception in 2003, we have gained a great reputation as a software development company for offering cutting-edge solutions in all key verticals and horizontals which span a complete life cycle from planning, designing, innovation, development and testing to implementation, roll-out and maintenance.</p>
+                                                <p className="mt-8 text-xl text-gray-500">At THECODECRAFTS, we believe that technology should not just solve problems—it should inspire, empower, and create lasting impact. We are a team of innovators, engineers, and dreamers dedicated to building intelligent, scalable, and human-centered digital solutions. From intuitive user interfaces to powerful backend systems, we blend creativity with precision to craft products that are as functional as they are beautiful.</p>
+                                                <p className="mt-8 text-xl text-gray-500">Our mission is simple: turn ideas into reality with code that works like magic. Whether it’s shaping seamless web experiences, optimizing complex systems, or developing future-ready platforms, we approach every project with craftsmanship, curiosity, and commitment to excellence.</p>
                                          </div>
                                          <img src={team} className="lg:w-[45%] w-full object-cover"></img>
                                          </div>
-                                         <p className="mt-12 text-xl text-gray-500">Our approaches are always customer focused and competitively based on the latest emerging technologies of the time, non-compromising on the quality of the products which are vastly tested and yet at an affordable price.</p>
-                                         <p className="mt-8 text-xl text-gray-500">We always remain innovative and exploit new capabilities enabled through new technologies. A cornerstone of our success is the trust and close collaboration of our clients.</p>
+                                         <p className="mt-12 text-xl text-gray-500">At CodeCraft, we’re not just coding—we’re crafting the future.</p>
                             </div>
 
                               <MovableBackgroundSection></MovableBackgroundSection>

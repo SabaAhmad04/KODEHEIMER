@@ -82,7 +82,7 @@ const MovableImage = () => {
         <div 
             ref={sectionRef} // Attach the ref to this div
             style={{
-                height: "700px", // Fixed height for your section
+                height: "800px", // Fixed height for your section
                 width: "100%", // Full width of its parent
                 overflow: "hidden", // Crucial to hide the excess image that provides the buffer
                 position: 'relative', // Needed for absolute positioning of the image

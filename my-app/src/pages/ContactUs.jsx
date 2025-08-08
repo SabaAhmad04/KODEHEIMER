@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { useEffect, useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { FaWhatsapp } from "react-icons/fa6";
+import logo from "../assets/logo.png"
 
 const ContactUs = () => {
          const form = useRef();
@@ -77,11 +78,12 @@ const ContactUs = () => {
 
                  <div className={`w-full h-[660px]  bg-[rgba(96,165,250,0.4)]  flex flex-col items-center ${isVisible ? "block" : "hidden"}`}>
                      <div className={`flex md:flex-row flex-col mx-auto items-center justify-between pt-6 w-[80%] text-white ${isOpen ? "block" : "hidden"}`}>
-                              <div className="font-bold">
-                                   <Link to="/">
-                                          THECODECRAFTS
-                                   </Link>
-                              </div>
+                              <div className="font-bold flex items-center justify-center">
+                                                                 <img  className="w-[30px] h-[30px]" src={logo}/>
+                                                                 <Link to="/">
+                                                                        THECODECRAFTS
+                                                                 </Link>
+                                                            </div>
                               <div className={`flex gap-x-14 items-center`}>
                                   <Link to="/" className="font-bold hover:cursor-pointer">HOME</Link>
                                   <Link to="/about" className="font-bold">ABOUT</Link>
