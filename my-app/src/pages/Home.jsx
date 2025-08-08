@@ -72,7 +72,9 @@ const Home = () => {
          <div className={`flex flex-row  mx-auto items-center justify-between pt-6 w-[80%] text-white lg:ml-36 ml-24 z-300 absolute
           ${isOpen && isVisible ? "block" : "hidden"}`}>
                               <div className="font-bold flex items-center justify-center">
-                                                                 <img  className="w-[30px] h-[30px]" src={logo}/>
+                                                                 <Link to="/">
+                                                                                     <img  className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]" src={logo}/>
+                                                                                 </Link>
                                                                  <Link to="/">
                                                                         THECODECRAFTS
                                                                  </Link>

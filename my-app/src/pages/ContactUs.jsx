@@ -79,7 +79,9 @@ const ContactUs = () => {
                  <div className={`w-full h-[660px]  bg-[rgba(96,165,250,0.4)]  flex flex-col items-center ${isVisible ? "block" : "hidden"}`}>
                      <div className={`flex md:flex-row flex-col mx-auto items-center justify-between pt-6 w-[80%] text-white ${isOpen ? "block" : "hidden"}`}>
                               <div className="font-bold flex items-center justify-center">
-                                                                 <img  className="w-[30px] h-[30px]" src={logo}/>
+                                                                 <Link to="/">
+                                                                                     <img  className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]" src={logo}/>
+                                                                                 </Link>
                                                                  <Link to="/">
                                                                         THECODECRAFTS
                                                                  </Link>

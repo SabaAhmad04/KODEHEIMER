@@ -47,7 +47,9 @@ const Navbar = () => {
         className={`flex flex-row items-center justify-between text-xl w-[90%] font-semibold
          ${isOpen ? "h-[180px]" : "h-[70px]"}`}>
             <div className="flex flex-row gap-x-3 items-center justify-center h-full">
-                <img  className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]" src={logo}/>
+                <Link to="/">
+                    <img  className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]" src={logo}/>
+                </Link>
                 <div className="text-white font-bold ">
                     <Link to="/" className="md:font-bold font-medium">
                          THECODECRAFTS
