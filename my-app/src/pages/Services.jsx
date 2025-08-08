@@ -7,7 +7,7 @@ import development from '../assets/development.jpg'
 import Footer from '../components/Footer';
 import MovableImage from '../components/MovableImage';
 import { FaWhatsapp } from "react-icons/fa6";
-import fullstack2 from "../assets/fullstack2.jpg"
+// import fullstack2 from "../assets/fullstack2.jpg"
 import frontend from "../assets/frontend2.jpg"
 import backend from "../assets/backend2.jpg"
 import ui from "../assets/ui.jpg"
