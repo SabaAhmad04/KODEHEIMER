@@ -7,7 +7,7 @@ import development from '../assets/development.jpg'
 import Footer from '../components/Footer';
 import MovableImage from '../components/MovableImage';
 import { FaWhatsapp } from "react-icons/fa6";
-import fullstack from "../assets/fullstack2.jpg"
+import fullstack2 from "../assets/fullstack2.jpg"
 import frontend from "../assets/frontend2.jpg"
 import backend from "../assets/backend2.jpg"
 import ui from "../assets/ui.jpg"
@@ -151,7 +151,7 @@ Our expertise spans frontend, backend, full stack, UI/UX design, and e-commerce 
                             </div>
 
                             <div className=' mt-24 w-[80%] flex md:flex-row flex-col gap-y-8 justify-between items-center'>
-                                     <img src={fullstack} className='md:w-[40%] w-full object-cover rounded-md'></img>
+                                     <img src={fullstack2} className='md:w-[40%] w-full object-cover rounded-md'></img>
                                      <div className='md:w-[52%] w-full'>
                                            <h2 className='md:text-6xl text-4xl lg:font-bold font-medium'>Full Stack Development</h2>
                                            <div className='mt-8 text-gray-600 text-xl'>
