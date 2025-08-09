@@ -14,7 +14,7 @@ const Card = ({iconImage,image,name}) => {
             {iconImage}
           </div>
 
-          <div className='mt-8 text-cyan-100 font-bold text-3xl'>
+          <div className='mt-8 text-blue-300 font-bold text-3xl'>
             {name}
           </div>
 

@@ -77,7 +77,7 @@ const About = () => {
                               </div>
                      </div>
 
-                     <div className='flex fixed right-1 bottom-10 gap-1 z-300'>
+                     <div className='flex fixed right-1 bottom-10 gap-1 z-[9999]'>
                                <p className='text-gray-500 mt-2.5'>
                               <Link to="https://wa.me/917004109936" className='bg-slate-200 px-1 rounded-md py-1'>
                                  Message
