@@ -62,7 +62,21 @@ const Services = () => {
                 `}
             </style>
 
-          <div className="">
+          <div className="w-full">
+                     <div className='flex fixed right-1 bottom-10 gap-1 z-3000'>
+                            <p className='text-gray-500 mt-2.5'>
+                                   <Link to="https://wa.me/917004109936" className='bg-slate-200 px-1 rounded-md py-1'>
+                                          Message
+                                   </Link>
+                            </p>
+                            <a
+                                   href='https://wa.me/917004109936'
+                                   target="_blank"
+                                   rel="noopener noreferrer" 
+                                   className='text-white p-1 bg-green-500 rounded-full cursor-pointer'>
+                                          <FaWhatsapp size={36}/>
+                            </a>
+                     </div>
                      <div 
                         style={{
                         backgroundImage:`url(${service})`,
@@ -96,7 +110,7 @@ const Services = () => {
                               </div>
                      </div>
                       
-                      <div className='flex fixed right-1 bottom-10 gap-1 z-300'>
+                      {/* <div className='flex fixed right-1 bottom-10 gap-1 z-300'>
                                                      <p className='text-gray-500 mt-2.5'>
                                                      <Link to="https://wa.me/917004109936" className='bg-slate-200 px-1 rounded-md py-1'>
                                                         Message
@@ -109,7 +123,7 @@ const Services = () => {
                                                        className='text-white p-1 bg-green-500 rounded-full cursor-pointer'>
                                                          <FaWhatsapp size={36}/>
                                                      </a>
-                      </div>
+                      </div> */}
 
                      <div className={`w-[50%] flex flex-col text-white items-center justify-center mt-40 fixed z-5 ${isVisible ? "block" : "hidden"}`}>
                                 <h1 className="text-8xl font-bold drop-shadow-lg">What We Do</h1>

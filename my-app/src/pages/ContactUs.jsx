@@ -74,6 +74,20 @@ const ContactUs = () => {
                       top:"0"
                  }} className={`${isVisible ? "block" : "hidden"}`}>      
                  </div>
+                 <div className='flex fixed right-1 bottom-10 gap-1 z-3000'>
+                            <p className='text-gray-500 mt-2.5'>
+                                   <Link to="https://wa.me/917004109936" className='bg-slate-200 px-1 rounded-md py-1'>
+                                          Message
+                                   </Link>
+                            </p>
+                            <a
+                                   href='https://wa.me/917004109936'
+                                   target="_blank"
+                                   rel="noopener noreferrer" 
+                                   className='text-white p-1 bg-green-500 rounded-full cursor-pointer'>
+                                          <FaWhatsapp size={36}/>
+                            </a>
+                  </div>
 
 
                  <div className={`w-full h-[660px]  bg-[rgba(96,165,250,0.4)]  flex flex-col items-center ${isVisible ? "block" : "hidden"}`}>
@@ -95,7 +109,7 @@ const ContactUs = () => {
                               </div>
                      </div>
 
-                     <div className='flex fixed right-1 bottom-10 gap-1 z-300'>
+                     {/* <div className='flex fixed right-1 bottom-10 gap-1 z-300'>
                                                     <p className='text-gray-500 mt-2.5'>
                                                     <Link to="https://wa.me/917004109936" className='bg-slate-200 px-1 rounded-md py-1'>
                                                        Message
@@ -108,7 +122,7 @@ const ContactUs = () => {
                                                       className='text-white p-1 bg-green-500 rounded-full cursor-pointer'>
                                                         <FaWhatsapp size={36}/>
                                                     </a>
-                     </div>
+                     </div> */}
 
                      <div className={`w-[50%] flex flex-col text-white items-center justify-center mt-40 fixed z-5 ${isVisible ? "block" : "hidden"}`}>
                                 <h1 className="text-8xl font-bold drop-shadow-lg">Contact Us</h1>
@@ -140,8 +154,8 @@ const ContactUs = () => {
                                            <p className="mt-1 text-xl text-gray-400">T:<span className="text-blue-400">+917004109936</span></p>
                                            <p className="mt-1 text-xl text-gray-400">E:<span className="text-blue-400">thecodecrafts07@gmail.com</span></p>
                                      </div>
-                                     <form ref={form} onSubmit={sendEmail}>
-                                            <div className="flex md:flex-row flex-col gap-x-5 gap-y-5">
+                                     <form ref={form} onSubmit={sendEmail} >
+                                            <div className=" flex md:flex md:flex-row flex-col gap-x-5 gap-y-5">
                                                   <input type="text" required placeholder="Full Name" name="user_name" className="md:w-[160px] w-full h-[50px] border-[1px] border-gray-300 bg-gray-200 pl-3 rounded-md"></input>
                                                   <input type="email" required placeholder="Email" name="user_email" className="md:w-[160px]  w-full h-[50px] border-[1px] border-gray-300 bg-gray-200 pl-3 rounded-md"></input>
                                                   <input type="tel"  required pattern="[0-9]{10}" 
