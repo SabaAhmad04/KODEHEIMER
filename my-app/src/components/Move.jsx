@@ -152,12 +152,12 @@ const MovableBackgroundSection = () => {
                      </div>
                      <form className='flex flex-col mt-8 w-[70%] justify-center items-center z-30' ref={form} onSubmit={sendEmail}>
                                 <div className='flex flex-col lg:flex-row justify-between w-full gap-y-4'>
-                                     <input className='bg-white h-14 pl-3 lg:w-[340px] w-full rounded-md' name="user_name" type="text" placeholder='Full Name'></input>
-                                     <input className='bg-white h-14 pl-3 lg:w-[340px] w-full rounded-md' name="user_email" type="email" placeholder='Email'></input>
-                                     <input className='bg-white h-14 pl-3 lg:w-[340px] w-full rounded-md' name="user_phone" type="tel" placeholder='Phone Number'></input>
+                                     <input className='bg-white animated-border h-14 pl-3 lg:w-[340px] w-full rounded-md' name="user_name" type="text"  required placeholder='Full Name'></input>
+                                     <input className='bg-white animated-border h-14 pl-3 lg:w-[340px] w-full rounded-md' name="user_email" type="email" required placeholder='Email'></input>
+                                     <input className='bg-white animated-border h-14 pl-3 lg:w-[340px] w-full rounded-md' name="user_phone" type="tel" required placeholder='Phone Number'></input>
                                 </div>
-                                <textarea placeholder='How can i help you?' name="message" className='w-full bg-white mt-5 h-35 pl-3 rounded-md'></textarea>
-                                <button className='mt-7 bg-blue-700/70 rounded-full p-2 px-7 text-white text-xl hover:cursor-pointer'>Send</button>
+                                <textarea placeholder='How can i help you?' name="message" required className='w-full animated-border bg-white mt-5 h-35 pl-3 rounded-md'></textarea>
+                                <button className='mt-7 glow-btn relative border-[0.25em] px-12 py-4 text-[17px] font-bold rounded-xl outline-none transition-all duration-300 cursor-pointer'>Send</button>
                      </form>
             </div>
         </div>

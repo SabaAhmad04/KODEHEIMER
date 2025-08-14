@@ -1,36 +1,37 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router";
-import { LuAlignJustify } from "react-icons/lu";
-import logo from "../assets/logo.png"
+import { ImMenu } from "react-icons/im";
+import logo from "../assets/logo2.jpg"
+import StarBorder from "./TextStartBorder";
+import { ImCross } from "react-icons/im";
+import Menu from "./Menu";
+
 
 const Navbar = () => {
     const[isOpen,setIsOpen] = useState(false);
     const[isVisible,setIsVisible] = useState(true);
+    const[isScrolled,setIsScrolled] = useState(false);
     
     const navRef = useRef(null);
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (navRef.current && !navRef.current.contains(event.target)) {
-                setIsOpen(false);
-            }
-        };
+         const checkScrolled = () => {
+                const scrolled = window.scrollY > 35;
+                setIsScrolled(scrolled);
+         }
 
-        if (isOpen) {
-            document.addEventListener("mousedown", handleClickOutside);
-        } else {
-            document.removeEventListener("mousedown", handleClickOutside);
-        }
+         checkScrolled();
+         window.addEventListener("scroll",checkScrolled);
 
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [isOpen]);
+         return () => {
+             window.removeEventListener("scroll",checkScrolled);
+         };
+    },[]);
 
     useEffect(() => {
            const checkVisibility = () => {
-                   const isMobile = window.innerWidth < 880;
-                   setIsVisible(!isMobile);
+                   const isMobile = window.innerWidth < 840;
+                   setIsOpen(!isMobile);
            };
 
            checkVisibility();
@@ -41,38 +42,76 @@ const Navbar = () => {
     },[])
 
     return(
-        <div className="w-full flex justify-center items-center">
-                  <div 
+        <div className={`w-full relative flex justify-center items-center ${isScrolled || !isVisible ? "bg-gray-950" : ""}`}>
+        <div 
         ref={navRef}
-        className={`flex flex-row items-center justify-between text-xl w-[90%] font-semibold
-         ${isOpen ? "h-[180px]" : "h-[70px]"}`}>
-            <div className="flex flex-row gap-x-3 items-center justify-center h-full">
+        className="flex flex-row items-center  justify-between text-xl w-[90%] font-semibold h-[80px]">
+            <div className="flex flex-row gap-x-3 items-center h-full">
+                <div className={`${!isOpen && !isVisible ? "block" : "hidden"}`}>
+                    <Menu isOpen={isOpen} isVisible={isVisible} setIsVisible={setIsVisible}></Menu>
+                </div>
                 <Link to="/">
-                    <img  className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]" src={logo}/>
+                    <img  className="md:w-[80px] md:h-[80px] w-[55px] h-[55px]" src={logo}/>
                 </Link>
                 <div className="text-white font-bold ">
-                    <Link to="/" className="md:font-bold font-medium">
-                         THECODECRAFTS
+                    <Link to="/" className="md:font-extrabold text-xl font-bold ">
+                         KODEHEIMER
                     </Link>
                 </div>
+                
             </div>
             <div className="flex">
                 <div className="">
-                    <button onClick={() => setIsOpen(!isOpen)} 
-                    className={`${!isOpen && !isVisible ? "flex" : "hidden"} flex justify-items-end`}>
-                        <LuAlignJustify className="font-extrabold text-xl text-white cursor-pointer"/>
+                    <button
+                    className={`${!isOpen  ? "block" : "hidden"} flex justify-center items-center w-12 h-12`}>
+                        <ImMenu
+                        onClick={() => setIsVisible(!isVisible)}
+                        className={`absolute transition-all duration-300 ease-in-out text-xl text-white cursor-pointer
+                                    ${isVisible ? "opacity-100 rotate-0 scale-100" : "opacity-0 rotate-90 scale-75"}`}/>
+                        <ImCross 
+                        onClick={() => setIsVisible(!isVisible)}
+                        className={`absolute transition-all duration-300 ease-in-out text-xl text-white cursor-pointer
+                                     ${isVisible ? "opacity-0 rotate-90 scale-75" : "opacity-100 -rotate-0 scale-100"}`}/>
                     </button>
                 </div>
-                <div className={`${isOpen || isVisible ? "flex" : "hidden"} w-full flex-col gap-y-1 font-semibold text-white 
-                ${isVisible ? "flex flex-row gap-x-16" : "flex"}`}>
-                    <button><Link to = {'/'} onClick={ () => setIsOpen(!isOpen)}>Home</Link></button>
-                    <button><Link to = {'/about'} onClick={ () => setIsOpen(!isOpen)}>About</Link></button>
-                    <button><Link to = {'/services'} onClick={ () => setIsOpen(!isOpen)}>Services</Link></button>
-                    <button className={`${isVisible ? "bg-blue-700 rounded-full p-1 px-2 hover:bg-gray-400" : ""}`}><Link to = {'/contactus'} onClick={ () => setIsOpen(!isOpen)}>Contact Us</Link></button>
-                    {/* <button><Link to = {'/blog'} onClick={ () => setIsOpen(!isOpen)}>Blog</Link></button> */}
+                <div className={`${isOpen ? "flex" : "hidden"} w-full flex-row lg:gap-x-10 md:gap-x-8 text-white`}>
+                    <button><Link to = {'/'} className={`${isScrolled ? "font-bold " : "font-medium text-cyan-500"}`}>
+                        <StarBorder
+                            as="button"
+                            className="custom-class cursor-pointer"
+                            color = "magenta"
+                            speed = "2s"
+                        >
+                            Home
+                        </StarBorder>
+                    </Link></button>
+                    <button><Link to = {'/about'} className={`${isScrolled ? "font-bold" :"font-medium text-cyan-500"}`}>
+                        <StarBorder
+                            as="button"
+                            className="custom-class cursor-pointer"
+                            color = "magenta"
+                            speed = "2s"
+                        >
+                            About
+                        </StarBorder>
+                    </Link></button>
+                    <button><Link to = {'/services'}  className={`${isScrolled ? "font-bold" :"font-medium text-cyan-500"}`}>
+                        <StarBorder
+                            as="button"
+                            className="custom-class cursor-pointer"
+                            color = "magenta"
+                            speed = "2s"
+                        >
+                            Services
+                        </StarBorder>
+                    </Link></button>
+                    <Link to = {'/contactus'}  className={`${isScrolled ? "text-[17px]" : "text-[16px]"} glow-contactUs w-[110px]`}>
+                            Contact Us
+                    </Link>
                 </div>
             </div>
         </div>
+        
         </div>
     )
 }

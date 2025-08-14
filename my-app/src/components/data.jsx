@@ -7,12 +7,14 @@ import ecommerce from "../assets/ecommerce.jpg"
 import content from "../assets/contentWrite.jpg"
 // import Image2 from "../assets/Image2.jpg"
 import { RxCamera } from "react-icons/rx";
+import { Link } from "react-router"
 export const cardData = [
     {
         id:1 ,
         image:frontend,
         name:"CraftX Frontend",
         iconImage: <RxCamera size={100}/> ,
+        
     },
     {
         id:2 ,
