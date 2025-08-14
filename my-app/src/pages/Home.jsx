@@ -190,7 +190,7 @@ const Home = () => {
           <Button/>
         </Link>
 
-        <div className='md:w-[70%] w-[80%]  h-110 border-cyan-400/50 hover:border-cyan-500/80 border bg-cyan-800/20 rounded-md backdrop-blur-3xl flex flex-col items-center gap-y-16 mt-14 mb-12 drop-shadow-[0_0_20px_rgb(34,211,238)]'>
+        <div className='md:w-[70%] w-[80%]  md:h-110 h-116 border-cyan-400/50 hover:border-cyan-500/80 border bg-cyan-800/20 rounded-md backdrop-blur-3xl flex flex-col items-center gap-y-16 mt-14 mb-12 drop-shadow-[0_0_20px_rgb(34,211,238)]'>
              <h1 className='md:text-6xl text-4xl font-bold text-center text-white mt-10'>Reach Us</h1>
              <p className='text-white md:text-3xl text-xl text-center font-bold w-[60%]'>Your next big project starts here — drop us a message and let’s make it happen.</p>
              <Link to="/contactus" className='bg-green-300/30 border-[1px] border-green-500 hover:border-green-600 p-7 rounded-full'>
