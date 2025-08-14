@@ -136,11 +136,13 @@ const Home = () => {
             <div className='mt-18  text-amber-700 '> <LuChevronsDown size={40}/> </div>
 
             <div className='mt-6  w-[95%]'>
-              <div className='bg-gray-500 border-[1px]'></div>
-              <p className='text-gray-500 mt-2 text-center'>
+              <div className='w-full h-[1px] bg-gray-600'>
+              </div>
+              <p className='text-gray-300/60 mt-2 text-center'>
                 Software development is a process of writing and maintaining the source code
               </p>
-              <div className='bg-gray-500 border-[1px] mt-2'></div>
+              <div className='w-full h-[1px] bg-gray-600 mt-3'>
+              </div>
             </div>
             
           </div>
@@ -155,11 +157,13 @@ const Home = () => {
             <div className='mt-18  text-cyan-400'> <LuChevronsDown size={40}/> </div>
 
             <div className='mt-6  w-[95%]'>
-              <div className='bg-gray-500 border-[1px]'></div>
-              <p className='text-gray-500 mt-2 text-center'>
+              <div className='w-full h-[1px] bg-gray-600'>
+              </div>
+              <p className='text-gray-300/60 mt-2 text-center'>
                 Software development is a process of writing and maintaining the source code
               </p>
-              <div className='bg-gray-500 border-[1px] mt-2'></div>
+              <div className='w-full h-[1px] bg-gray-600 mt-3'>
+              </div>
             </div>
           </div>
 
@@ -175,11 +179,13 @@ const Home = () => {
             <div className='mt-18  text-green-400'> <LuChevronsDown size={40}/> </div>
 
             <div className='mt-6  w-[95%]'>
-              <div className='bg-gray-500 border-1 '></div>
-              <p className='text-gray-500 mt-2 text-center'>
+              <div className='w-full h-[1px] bg-gray-600'>
+              </div>
+              <p className='text-gray-300/60 mt-2 text-center'>
                 Software development is a process of writing and maintaining the source code
               </p>
-              <div className='bg-gray-500 border-1 mt-2'></div>
+              <div className='w-full h-[1px] bg-gray-600 mt-3'>
+              </div>
             </div>
           </div>
           
