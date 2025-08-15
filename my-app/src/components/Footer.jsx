@@ -57,7 +57,7 @@ const Footer = () => {
                          <h1 className=" text-white font-semibold text-lg">Contact</h1>
                          <div className="flex flex-col gap-y-3">
                               <div  className="flex items-center justify-center text-teal-500 gap-x-2">
-                                   <IoLocationSharp className="text-white font-bold text-2xl " />
+                                   <IoLocationSharp className="text-white font-bold text-3xl " />
                                    <div className="flex flex-col text-sm ">
                                           <p className="text-sm">NIT JAMSHEDPUR, ADITYAPUR,</p>
                                          <p>SARAIKELA KHARSAWAN,831014</p>
@@ -65,8 +65,11 @@ const Footer = () => {
                               
                               </div>
                               <div  className="flex items-center gap-x-2">
-                                   <HiOutlineDevicePhoneMobile className="text-white font-bold text-2xl"/>
-                                   <p className="text-teal-500 ">+91 7004109936</p>
+                                   <HiOutlineDevicePhoneMobile className="text-white font-bold text-3xl"/>
+                                   <div className="flex flex-col">
+                                        <p className="text-teal-500 ">+91 7004109936</p>
+                                        <p className="text-teal-500 ">+91 9335331940</p>
+                                   </div>
                               </div>
                          </div>
                     </div>
