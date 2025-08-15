@@ -342,7 +342,7 @@ export default function Galaxy({
                <div className="w-[50%]  flex flex-col gap-y-8 text-white items-center justify-center mt-44">
                                 <h1 className="md:text-8xl text-6xl text-center font-bold drop-shadow-lg bg-gradient-to-r from-cyan-600 to-slate-400 bg-clip-text text-transparent">Contact Us</h1>
                                 <p className="mt-4 text-3xl mx-auto text-center">Get in touch with us for any quiries you have</p>
-                                <Link to="/contactus" className="text-center flex justify-center items-center text-xl text-gray-500 glow-btn p-10 px-10 mt-6">
+                                <Link to="/services" className="text-center flex justify-center items-center text-xl text-gray-500 glow-btn p-10 px-10 mt-6">
                                           VIEW OUR PRODUCTS
                                 </Link>
                </div>
