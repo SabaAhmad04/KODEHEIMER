@@ -15,18 +15,32 @@ const Footer = () => {
                     <div className="flex flex-col">
                          <p className=" text-xl items-start font-medium bg-gradient-to-r from-blue-500 via-cyan-400 to-cyan-700 bg-clip-text text-transparent">KodeHeimer <span className="font-normal text-white">marketplace</span></p>
                          <div className="flex gap-x-4">
-                              <Link to="" className=" flex items-center justify-center">
-                                   <FaFacebookF className="text-white text-xl hover:text-blue-400" size={20}/>
-                              </Link>
-                              <Link to="" className="flex items-center justify-center">
+                              <a
+                                href="https://www.facebook.com/people/Kode-Heimer/pfbid0aj2DnzK8cTgeVCMgtccE1HCxspw43u7hvnni3FLV4hZSqXanqFAMFBHMhyzptoz9l/"
+                                target="_blank"    
+                                rel="noopener noreferrer"  
+                                className="flex items-center justify-center"
+                              >
+                                <FaFacebookF className="text-white text-xl hover:text-blue-400" size={20} />
+                              </a>
+                              <a 
+                              target="_blank"    
+                              rel="noopener noreferrer" 
+                              href="https://www.instagram.com/kode.heimer?igsh=MTd1ZmoycndpdWNq" className="flex items-center justify-center">
                                    <FaInstagram className="text-white text-xl hover:text-red-600" size={20}/>
-                              </Link>
-                              <Link to="" className="flex items-center justify-center">
+                              </a>
+                              <a 
+                              target="_blank"    
+                              rel="noopener noreferrer"
+                              href="mailto:kodeheimer07@gmail.com" className="flex items-center justify-center">
                                    <TiMail className="text-white text-xl  hover:text-amber-500" size={28}/>
-                              </Link>
-                              <Link to="" className="flex items-center justify-center">
+                              </a>
+                              <a 
+                              target="_blank"    
+                              rel="noopener noreferrer"
+                              href="https://x.com/kodeheimer07?t=fxv7st7wBw5gdYmLTmjftg&s=09" className="flex items-center justify-center">
                                    <RxTwitterLogo className="text-white text-xl hover:text-cyan-500" size={20}/>
-                              </Link>
+                              </a>
                          </div>
                     </div>
 
@@ -36,7 +50,7 @@ const Footer = () => {
                               <Link to={"/"} className="text-white/65 hover:text-cyan-400 ease-in-out duration-200">Home</Link>
                               <Link to={"/about"} className="text-white/65 hover:text-cyan-400 ease-in-out duration-200">About</Link>
                               <Link to={"/services"} className="text-white/65 hover:text-cyan-400 ease-in-out duration-200">Services</Link>
-                              <Link to={"/contact"} className="text-white/65 hover:text-cyan-400 ease-in-out duration-200">Contact us</Link>
+                              <Link to={"/contactus"} className="text-white/65 hover:text-cyan-400 ease-in-out duration-200">Contact us</Link>
                          </div>
                     </div>
                </div>
